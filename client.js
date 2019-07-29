@@ -1,7 +1,7 @@
 // This file contains the boilerplate to execute your React app.
 // If you want to modify your application's content, start in "index.js"
 
-import {ReactInstance} from 'react-360-web';
+import {ReactInstance, Surface} from 'react-360-web';
 
 function init(bundle, parent, options = {}) {
   const r360 = new ReactInstance(bundle, parent, {
@@ -12,9 +12,8 @@ function init(bundle, parent, options = {}) {
 
   // Render your app content to the default cylinder surface
   r360.renderToSurface(
-    r360.createRoot('take6', { 
+    r360.createRoot('VideoPlayer', { 
         
-
     }),
     r360.getDefaultSurface()
   );
